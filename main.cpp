@@ -87,7 +87,7 @@ public:
 		for(unsigned int j = 0; j < products.size(); j++){
 			str += products[j].item_name + ": " + to_string(products[j].stock) + "\n";
 		}
-		str += "Total earnings: " + to_string(revenue);
+		str += "Total earnings: " + to_string(revenue) + "\n";
 		return str;
 	}
 };
@@ -297,6 +297,13 @@ int main()
 	Theather cinema = {"Cinema White Rose", shop, {m1, m2, m3}, {e1, e2, e3}, {1, 2, 3, 4, 5, 6, 7}};
 	
 	cout << cinema.toString();
+	cout << "\n";
+	cout << m1.toString();
+	cout << "\n";
+	cout << shop.toString();
+	shop.set_employee(e2);
+	cout << "\n";
+	cout << shop.toString();
 	cout << "\n\n";
 	
 }
