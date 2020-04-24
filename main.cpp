@@ -196,6 +196,16 @@ public:
 		return "Movie added";
 	}
 	
+	string remove_movie(Movies arg){
+		for(unsigned int j = 0; j < movies.size(); j++){
+			if(movies[j].movie_name == arg.movie_name && movies[j].room.military_time == arg.room.military_time && movies[j].room.day == arg.room.day && movies[j].room.month == arg.room.month && movies[j].room.room_nr == arg.room.room_nr){
+				movies.erase(movies.begin() + j);
+				return "Removal succesfull.";
+			}
+		}
+		return "Removal failed.";
+	}
+	
 	void hire_employee(Employees arg){
 		employees.push_back(arg);
 	}
@@ -208,15 +218,6 @@ public:
 				break;
 			}
 		}
-	}
-	string remove_movie(Movies arg){
-		for(unsigned int j = 0; j < movies.size(); j++){
-			if(movies[j].movie_name == arg.movie_name && movies[j].room.military_time == arg.room.military_time && movies[j].room.day == arg.room.day && movies[j].room.month == arg.room.month && movies[j].room.room_nr == arg.room.room_nr){
-				movies.erase(movies.begin() + j);
-				return "Removal succesfull.";
-			}
-		}
-		return "Removal failed.";
 	}
 	
 	void set_earnings(){
@@ -298,6 +299,4 @@ int main()
 	cout << cinema.toString();
 	cout << "\n\n";
 	
-	
-	// change Room name
 }
