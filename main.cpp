@@ -296,14 +296,11 @@ int main()
 	SnackShop shop = {e1, 0, {popcorn, soda_coke, soda_sprite, chips}};
 	Theather cinema = {"Cinema White Rose", shop, {m1, m2, m3}, {e1, e2, e3}, {1, 2, 3, 4, 5, 6, 7}};
 	
-	cout << cinema.toString();
-	cout << "\n";
-	cout << m1.toString();
-	cout << "\n";
-	cout << shop.toString();
+	cout << cinema.toString() << "\n";
+	cout << m1.toString() << "\n";
+	
+	cout << shop.toString() << "\n";
 	shop.set_employee(e2);
-	cout << "\n";
-	cout << shop.toString();
-	cout << "\n\n";
+	cout << shop.toString() << "\n";
 	
 }
