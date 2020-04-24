@@ -290,7 +290,7 @@ int main()
 	Items chips = {"Chips", 11, 12.99};
 	
 	Movies m1 = {"No war", {1, 29, 1900, 8, 11}, 19.43, 24};
-	Movies m2 = {"Tunesia 230", {2, 15, 1300, 5, 11}, 22.01, 21};
+	Movies m2 = {"Tunsie 230", {2, 15, 1300, 5, 11}, 22.01, 21};
 	Movies m3 = {"The underground railroad", {3, 30, 1600, 4, 11}, 13.07, 49};
 	
 	SnackShop shop = {e1, 0, {popcorn, soda_coke, soda_sprite, chips}};
